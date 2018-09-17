@@ -27,7 +27,7 @@ async def on_message(message):
 
         for i in range(50):
             try:
-                r =  requests.get(url,proxies=rack_mixed_proxy(),headers=headers1,verify=False,timeout=5)
+                r =  requests.get(url,headers=headers1,verify=False,timeout=5)
                 if r.status_code == 200:
                     print ("Viewed successfully")
                 
